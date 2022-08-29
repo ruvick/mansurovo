@@ -698,9 +698,6 @@ input::-webkit-inner-spin-button {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2078431373);
 }
-.nuar_blk:hover {
-  background-color: rgba(0, 0, 0, 0.3137254902);
-}
 
 .nuar_color {
   position: relative;
@@ -3366,6 +3363,111 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .page {
   flex: 1 1 auto;
+}
+
+.slider-bg-wrap {
+  position: relative;
+}
+
+.slider-bg {
+  background: grey;
+}
+.slider-bg__container {
+  position: relative;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.slider-bg__slide {
+  position: relative;
+  width: 100%;
+  height: 740px;
+  padding: 126px 0 75px 0;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+.slider-bg__title {
+  font-size: 55px;
+  line-height: 61px;
+  color: #fff;
+  margin-bottom: 37px;
+}
+.slider-bg__subtitle {
+  font-size: 21px;
+  line-height: 25.2px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.slider-bg__title-block {
+  flex: 1 1 auto;
+}
+
+.swiper-button-block {
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+}
+
+.slider-bg__swiper-button-block {
+  display: block;
+  position: absolute;
+  right: 18%;
+  bottom: 14%;
+}
+
+.slider-bg__swiper-button-block ._container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-main__slide-1 {
+  background-image: url("../img/main-bg.jpg");
+}
+
+.slider-main__slide-2 {
+  background: url("../img/sl-main-02.jpg");
+}
+
+.slider-bg__inner {
+  display: flex;
+  margin: 0 -17px;
+}
+
+.slider-bg__column {
+  display: flex;
+  flex: 0 1 25%;
+  padding: 0 17px;
+}
+
+.slider-bg__card {
+  flex: 0 1 100%;
+  padding: 28px 10px 28px 30px;
+  background: #7EAF00;
+  color: #fff;
+}
+
+.slider-bg__card-title {
+  font-size: 42px;
+  line-height: 50.4px;
+  font-weight: 900;
+  margin-bottom: 16.7px;
+}
+
+.slider-bg__card-subtitle {
+  font-size: 21px;
+  line-height: 25.2px;
+  font-weight: 500;
+}
+
+.slider-bg__card_01 {
+  border-radius: 25px 0 0 0;
+}
+
+.slider-bg__card_04 {
+  border-radius: 0 0 25px 0;
 }
 
 @media (max-width: 1200px) {
