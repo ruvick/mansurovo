@@ -7,7 +7,44 @@
 
 //<Подключаем шрифты>=======================================================================================
 //&display=swap&subset=cyrillic-ext
-@import "fonts";
+// @import "fonts";
+
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Regular.eot");
+	src: local("☺"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype"),
+		url("../fonts/Lato-Regular.svg") format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url("fonts/Lato-Bold.eot");
+	src: local("☺"), url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.ttf") format("truetype"),
+		url("../fonts/Lato-Bold.svg") format("svg");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Semibold.eot");
+	src: local("☺"), url("../fonts/Lato-Semibold.woff") format("woff"),
+		url("../fonts/Lato-Semibold.ttf") format("truetype"), url("../fonts/Lato-Semibold.svg") format("svg");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Heavy.eot");
+	src: local("☺"), url("../fonts/Lato-Heavy.woff") format("woff"), url("../fonts/Lato-Heavy.ttf") format("truetype"),
+		url("../fonts/Lato-Heavy.svg") format("svg");
+	font-weight: 900;
+	font-style: normal;
+}
+
 //</Подключаем шрифты>=======================================================================================
 
 //<Иконочные шрифты>==========================================================================================
@@ -15,7 +52,7 @@
 //</Иконочные шрифты>==========================================================================================
 
 //<Шрифт по умолчанию>==========================================================================================
-$fontFamily: "";
+$fontFamily: "Lato";
 $fontSize: 16;
 $fontWeight: 400;
 //</Шрифт по умолчанию>==========================================================================================
@@ -25,13 +62,13 @@ $fontWeight: 400;
 //<ПЕРЕМЕННЫЕ>==========================================================================================================
 $minWidth: 320px;
 $maxWidth: 1920;
-$maxWidthContainer: 1170;
+$maxWidthContainer: 1440;
 $md1: $maxWidthContainer+12;
 $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
 
-$mainColor: #000;
+$mainColor: #161615;
 
 //</ПЕРЕМЕННЫЕ>===========================================================================================================
 
@@ -40,12 +77,12 @@ $mainColor: #000;
 
 body {
 	font-weight: $fontWeight;
+	line-height: 19.2px;
 	color: $mainColor;
-	// background: #333;
 
 	a {
 		font-family: "Lato";
-		color: #1a1818;
+		color: #161615;
 	}
 
 	&._lock {
