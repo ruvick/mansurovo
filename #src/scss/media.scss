@@ -5,6 +5,12 @@
 	}
 }
 
+@media (max-width: 1460px) {
+	._container {
+		padding: 0 10px;
+	}
+}
+
 @media (max-width: 1440px) {
 	.header__navigation {
 		flex: 0 1 350px;
@@ -134,6 +140,30 @@
 
 	.mob-menu {
 		margin-top: 35px;
+	}
+
+	.footer {
+		padding: 13px 0;
+	}
+
+	.footer__row {
+		align-items: start;
+	}
+
+	.footer__menu-item {
+		flex: 0 1 100%;
+	}
+
+	.footer__menu a {
+		padding: 5px 0;
+		display: block;
+		line-height: 1;
+	}
+
+	.footer__logo {
+		width: 190px;
+		max-height: 48px;
+		margin-bottom: 10px;
 	}
 }
 
