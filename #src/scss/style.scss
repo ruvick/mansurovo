@@ -654,19 +654,105 @@ h4 {
 .connect-agro {}
 
 .connect-agro__block {
+	justify-content: space-between;
 	color: #fff;
 	padding: 50px 100px 64px 60px;
 	background: #435A33;
 	border-radius: 20px 0 20px 0;
 }
 
-.connect-agro__block-column {}
+.connect-agro__block-column {
+	margin-right: 15px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.connect-agro__block-column-form {
+	padding-top: 37px;
+}
 
 .connect-agro__block-title {
 	margin-bottom: 30px;
 }
 
 .connect-agro__block-subtitle {}
+
+.connect-agro__block-formSelect {
+	display: flex;
+	align-items: center;
+	margin-bottom: 25px;
+}
+
+.connect-agro__block-formSelect-select {
+	flex: 0 1 100%;
+	margin-right: 17px;
+}
+
+.connect-agro__block-formSelect-select-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #fff;
+
+	&::before {
+		content: '';
+		float: left;
+		width: 14.5px;
+		height: 9.5px;
+		background-size: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNi45NjkiIGhlaWdodD0iMTIuMTc2IiB2aWV3Qm94PSIwIDAgMTYuOTY5IDEyLjE3NiI+DQogIDxnIGlkPSLQodCz0YDRg9C/0L/QuNGA0L7QstCw0YLRjF84MCIgZGF0YS1uYW1lPSLQodCz0YDRg9C/0L/QuNGA0L7QstCw0YLRjCA4MCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTM2MTQuOTc0IC0zODQ1LjQxNykiPg0KICAgIDxnIGlkPSLQodCz0YDRg9C/0L/QuNGA0L7QstCw0YLRjF83OSIgZGF0YS1uYW1lPSLQodCz0YDRg9C/0L/QuNGA0L7QstCw0YLRjCA3OSI+DQogICAgICA8bGluZSBpZD0i0JvQuNC90LjRj18xOSIgZGF0YS1uYW1lPSLQm9C40L3QuNGPIDE5IiB4Mj0iNC43MDMiIHkyPSI0LjY3OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzYyNS44MjYgMzg0Ni44MzEpIiBmaWxsPSIjZmZmIiBzdHJva2U9IiM3ZWFmMDAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogICAgICA8bGluZSBpZD0i0JvQuNC90LjRj18yMCIgZGF0YS1uYW1lPSLQm9C40L3QuNGPIDIwIiB4MT0iNC43MDMiIHkyPSI0LjY3OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzYyNS44MjYgMzg1MS41KSIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjN2VhZjAwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIvPg0KICAgIDwvZz4NCiAgICA8bGluZSBpZD0i0JvQuNC90LjRj18yMSIgZGF0YS1uYW1lPSLQm9C40L3QuNGPIDIxIiB4Mj0iMTIuMjA0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzNjE1Ljk3NCAzODUxLjUwNSkiIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzdlYWYwMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPC9nPg0KPC9zdmc+DQo=');
+	}
+}
+
+.connect-agro__block-contacts {
+	padding-right: 67px;
+}
+
+.connect-agro__block-contacts-phone {
+	font-size: 28px;
+	font-weight: 700;
+	color: #fff;
+	margin-right: 76px;
+}
+
+.connect-agro__block-contacts-email {
+	font-size: 22px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.connect-agro__block-formSelect-select .select__title {
+	border: none;
+	border-radius: 0 20px 0 20px;
+}
+
+.connect-agro__block-formSelect-select .select__value {
+	font-size: 18px;
+	font-weight: 500;
+	height: 50px;
+	padding: 0px 23px;
+	color: #7EAF00;
+	border-radius: 0 20px 0 20px;
+}
+
+.connect-agro__block-formSelect-select .select__options {
+	top: 35px;
+	font-size: 18px;
+	color: #7EAF00;
+	padding: 10px 0px 5px 0px;
+	border-radius: 0 20px 0 20px;
+}
+
+.connect-agro__block-formSelect-select .select__option {
+	padding: 5px 23px;
+}
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 
