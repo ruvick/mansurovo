@@ -47,7 +47,13 @@
 		font-size: 14px;
 		font-weight: 400;
 		padding: 5px 33.5px 5px 0;
+		transition: all 0.3s;
 	}
+}
+
+.menu-list a:hover {
+	color: #7EAF00;
+	transition: all 0.3s;
 }
 
 .header__navigation {

@@ -31,3 +31,12 @@
 .footer__menu-item-link {
   padding: 2px 0;
 }
+
+.footer__menu a {
+  transition: all 0.3s;
+}
+
+.footer__menu a:hover {
+  color: #7EAF00;
+  transition: all 0.3s;
+}
