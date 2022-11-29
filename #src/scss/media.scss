@@ -17,6 +17,27 @@
 	}
 }
 
+@media (max-width: 1330px) {
+	.jobs-agro__column-descp {
+		padding: 73px 35px 73px 0;
+	}
+
+	.jobs-agro__inner {
+		margin-right: -10px;
+	}
+}
+
+@media (max-width: 1280px) {
+	.about-agro__inner {
+		margin: 0 -15px;
+	}
+
+	.about-agro__column {
+		padding: 0 15px;
+		padding-bottom: 15px;
+	}
+}
+
 @media (max-width: 1250px) {
 	.header__logo {
 		margin-right: 35px;
@@ -32,6 +53,59 @@
 	.header__search-icon,
 	.header__conf-policy {
 		margin-right: 15px;
+	}
+}
+
+@media (max-width: 1050px) {
+	.slider-bg__inner {
+		margin: 0 -10px;
+	}
+
+	.slider-bg__column {
+		padding: 0 10px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.about-agro__inner {
+		margin: 0 -10px;
+	}
+
+	.about-agro__column {
+		padding: 0 10px;
+		padding-bottom: 10px;
+	}
+
+	.about-agro__card {
+		padding: 42px 30px 35px 30px;
+	}
+
+	.jobs-agro__column-descp {
+		padding: 55px 35px 55px 0;
+	}
+
+	.jobs-agro__card-title {
+		margin-bottom: 20px;
+	}
+
+	.jobs-agro__card-button {
+		margin-top: 25px;
+	}
+}
+
+@media (max-width: 910px) {
+	.slider-bg__inner {
+		flex-wrap: wrap;
+		margin-top: 35px;
+	}
+
+	.slider-bg__column {
+		flex: 0 1 50%;
+		padding-bottom: 10px;
+	}
+
+	.slider-bg__slide {
+		padding: 65px 0 75px 0;
 	}
 }
 
@@ -165,6 +239,117 @@
 		max-height: 48px;
 		margin-bottom: 10px;
 	}
+
+	.slider-bg__slide {
+		min-height: 860px;
+	}
+
+	.slider-bg__title {
+		font-size: 35px;
+		line-height: 1.2;
+		margin-bottom: 10px;
+	}
+
+	.slider-bg__subtitle br,
+	.slider-bg__title br {
+		display: none;
+	}
+
+	.slider-bg__subtitle {
+		font-size: 16px;
+		line-height: 1.2;
+	}
+
+	.slider-bg__slide {
+		min-height: auto;
+		height: auto;
+	}
+
+	.slider-bg__slide {
+		padding: 85px 0 35px 0;
+	}
+
+	.slider-bg__card-title {
+		font-size: 26px;
+		line-height: 1.2;
+		margin-bottom: 10px;
+	}
+
+	.slider-bg__card-subtitle {
+		font-size: 14px;
+		line-height: 1.2;
+	}
+
+	.slider-bg__inner {
+		margin: 0 -5px;
+		margin-top: 25px;
+	}
+
+	.slider-bg__column {
+		flex: 0 1 24.8%;
+		padding: 0 5px;
+		padding-bottom: 5px;
+	}
+
+	.slider-bg__card {
+		padding: 20px;
+	}
+
+	.about-agro__card-icon {
+		margin-bottom: 5px;
+	}
+
+	.about-agro__card-title {
+		font-size: 20px;
+		line-height: 1.2;
+		margin-bottom: 10px;
+	}
+
+	.about-agro__card-line {
+		margin-bottom: 10px;
+	}
+
+	.about-agro__card-text {
+		font-size: 14px;
+	}
+
+	.about-agro__card {
+		padding: 25px;
+	}
+
+	.about-agro__column {
+		padding: 0 5px;
+		padding-bottom: 5px;
+	}
+
+	.about-agro__inner {
+		margin: 0 -5px;
+	}
+
+	.about-agro__card-icon::before {
+		background-size: 80%;
+	}
+
+	.jobs-agro {
+		padding: 0 !important;
+	}
+
+	.jobs-agro__column-descp {
+		padding: 25px 20px 25px 0;
+	}
+
+	.jobs-agro__card-title {
+		margin-bottom: 10px;
+	}
+
+	.jobs-agro__card-subtitle {
+		font-size: 14px;
+		line-height: 1.2;
+	}
+
+	.jobs-agro__card-button {
+		margin-top: 15px;
+	}
 }
 
 @media (max-width: 700px) {
@@ -175,6 +360,16 @@
 		-o-transition: right 0.8s;
 		transition: right 0.8s;
 	}
+
+	.slider-bg__column {
+		flex: 0 1 50%;
+	}
+}
+
+@media (max-width: 630px) {
+	.about-agro__column {
+		flex: 0 1 100%;
+	}
 }
 
 @media (max-width: 612px) {
@@ -184,6 +379,19 @@
 
 	.popup__form-block {
 		padding: 35px 15px;
+	}
+
+	.jobs-agro__inner {
+		flex-wrap: wrap-reverse;
+		margin-right: 0;
+	}
+
+	.jobs-agro__column {
+		flex: 0 1 100%;
+	}
+
+	.jobs-agro {
+		padding-top: 25px !important;
 	}
 }
 
@@ -227,5 +435,21 @@
 
 	.search__input {
 		border-radius: 0 !important;
+	}
+}
+
+@media (max-width: 414px) {
+	.jobs-agro__card-button {
+		width: 100%;
+	}
+
+	.jobs-agro__column-descp {
+		padding: 25px 0px 25px 0;
+	}
+}
+
+@media (max-width: 375px) {
+	.slider-bg__column {
+		flex: 0 1 100%;
 	}
 }
