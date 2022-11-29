@@ -68,8 +68,14 @@
 	line-height: 14.4px;
 }
 
+.header__conf-policy-mob {
+	display: none;
+	margin-bottom: 20px;
+}
+
 .header__icon-menu {
 	display: flex;
+	align-items: center;
 }
 
 .header__icon-menu-text {
@@ -168,7 +174,7 @@
 	// box-shadow: 0px 3px 5px 0px black;
 	-webkit-transition: right 0.8s;
 	-o-transition: right 0.8s;
-	margin-top: 80.3px;
+	margin-top: 81px;
 	transition: right 0.8s;
 	overflow: auto;
 }

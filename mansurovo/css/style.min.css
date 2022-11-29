@@ -3125,8 +3125,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   line-height: 14.4px;
 }
 
+.header__conf-policy-mob {
+  display: none;
+  margin-bottom: 20px;
+}
+
 .header__icon-menu {
   display: flex;
+  align-items: center;
 }
 
 .header__icon-menu-text {
@@ -3219,7 +3225,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   border-top: 1px solid #7EAF00;
   -webkit-transition: right 0.8s;
   -o-transition: right 0.8s;
-  margin-top: 80.3px;
+  margin-top: 81px;
   transition: right 0.8s;
   overflow: auto;
 }
@@ -3871,9 +3877,42 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   padding: 5px 23px;
 }
 
-@media (max-width: 1200px) {
-  ._container {
+@media (max-width: 1710px) {
+  .header__container {
     padding: 0 10px;
+  }
+}
+@media (max-width: 1440px) {
+  .header__navigation {
+    flex: 0 1 350px;
+  }
+}
+@media (max-width: 1250px) {
+  .header__logo {
+    margin-right: 35px;
+  }
+  .mob-menu {
+    margin-top: 81px;
+  }
+}
+@media (max-width: 1100px) {
+  .header__search-icon,
+.header__conf-policy {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 860px) {
+  .header__logo {
+    flex: 0 0 150px;
+    height: 43px;
+  }
+  .menu-list a {
+    font-size: 12px;
+    line-height: 1;
+    padding: 5px 25px 5px 0;
+  }
+  .mob-menu {
+    margin-top: 73px;
   }
 }
 @media (max-width: 768px) {
@@ -3887,21 +3926,24 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     margin-right: 20px;
   }
   .logo-icon {
-    flex: 0 0 45px;
-    height: 15px;
+    flex: 0 0 115px;
+    height: 35px;
   }
   .logo-icon:before {
     flex: 0 0 100%;
     height: 100%;
   }
-  .logo-icon p {
-    display: none;
-  }
-  .icon-menu {
-    display: flex;
-  }
   .header__menu-block {
     margin-right: 15px;
+  }
+  .header__conf-policy {
+    display: none;
+  }
+  .header__conf-policy-mob {
+    display: block;
+  }
+  .header__navigation {
+    justify-content: flex-end;
   }
   .header__menu-list {
     display: none;
@@ -3935,6 +3977,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   }
   ::-webkit-scrollbar {
     display: none;
+  }
+  .header__icon-menu-text {
+    font-size: 12px;
+    margin-right: 13px;
+  }
+  .mob-menu {
+    margin-top: 35px;
   }
 }
 @media (max-width: 700px) {
