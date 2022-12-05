@@ -82,10 +82,15 @@ let sliderBg = new Swiper('.slider-bg', {
 	//preloadImages: false,
 	//lazy: true,
 	// Dotts
-	//pagination: {
-	//	el: '.swiper-paggination',
-	//	clickable: true,
-	//},
+	pagination: {
+		el: '.slider-bg-pagination-fraction',
+		type: 'fraction',
+		renderFraction: function (currentClass, totalClass) {
+			return '<span class="' + currentClass + '"></span>' +
+				'<span class="rzdClass"></span>' +
+				'<span class="' + totalClass + '"></span>';
+		}
+	},
 	// Arrows
 	// navigation: {
 	// 	nextEl: '.swiper-button-next',
@@ -144,10 +149,15 @@ let directSlDescp = new Swiper('.directSlDescp', {
 	//preloadImages: false,
 	//lazy: true,
 	// Dotts
-	//pagination: {
-	//	el: '.swiper-paggination',
-	//	clickable: true,
-	//},
+	pagination: {
+		el: '.directSlDescp-pagination-fraction',
+		type: 'fraction',
+		renderFraction: function (currentClass, totalClass) {
+			return '<span class="' + currentClass + '"></span>' +
+				'<span class="rzdClass"></span>' +
+				'<span class="' + totalClass + '"></span>';
+		}
+	},
 	// Arrows
 	navigation: {
 		nextEl: '.swiper-button-next',
