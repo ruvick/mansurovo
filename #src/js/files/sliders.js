@@ -123,14 +123,12 @@ let sliderBg = new Swiper('.slider-bg', {
 	//},
 });
 
-
-// Сюда пишем класс нашего слайдера и меняем переменную
-let slider = new Swiper('.slider', {
+let directSlDescp = new Swiper('.directSlDescp', {
 	// effect: 'fade',
-	autoplay: {
-		delay: 3000,
-		disableOnInteraction: false,
-	},
+	// autoplay: {
+	// 	delay: 3000,
+	// 	disableOnInteraction: false,
+	// },
 
 	observer: true,
 	observeParents: true,
@@ -188,28 +186,29 @@ let slider = new Swiper('.slider', {
 });
 
 
-// Сюда пишем класс нашего слайдера и меняем переменную
-let productSlider = new Swiper('.product__slider', {
+let directSlImg = new Swiper('.directSlImg', {
 	// effect: 'fade',
 	// autoplay: {
-	// 	delay: 1300,
+	// 	delay: 3000,
 	// 	disableOnInteraction: false,
 	// },
 
 	observer: true,
 	observeParents: true,
-	slidesPerView: 1,
-	spaceBetween: 0,
+	slidesPerView: 1.3,
+	spaceBetween: 34, //отступ в пикселях
 	autoHeight: true,
 	speed: 2000,
 	//touchRatio: 0,
 	//simulateTouch: false,
-	loop: true,
+	loop: true, //циклично
+	// slidesPerGroup: 3, //по 3 слайда
+	// slideToClickedSlide: true, //клик по слайду
 	//preloadImages: false,
 	//lazy: true,
 	// Dotts
 	//pagination: {
-	//	el: '.slider-quality__pagging',
+	//	el: '.swiper-paggination',
 	//	clickable: true,
 	//},
 	// Arrows
@@ -248,3 +247,6 @@ let productSlider = new Swiper('.product__slider', {
 	//	el: '.swiper-scrollbar',
 	//},
 });
+
+directSlDescp.controller.control = directSlImg;
+directSlImg.controller.control = directSlDescp;

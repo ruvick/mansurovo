@@ -428,6 +428,73 @@ h4 {
 
 //========================================================================================================================================================
 
+.directions-agro__wrap {}
+
+
+.directions-agro__column {
+	// border: 1px solid #000;
+}
+
+.directions-agro__column-left {
+	flex: 0 1 750px;
+	margin-right: 25px;
+	overflow: hidden;
+}
+
+.directions-agro__title {
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 20.4px;
+	color: #161615;
+	margin-bottom: 24px;
+}
+
+.directions-agro__slDescp {
+	// flex: 0 1 750px;
+	// overflow: hidden;
+}
+
+
+.directions-agro__slDescp-slide {
+	padding-right: 170px;
+}
+
+.directions-agro__slDescp-slide-title {
+	margin-bottom: 28px;
+}
+
+.directions-agro__slDescp-slide-subtitle {
+	font-size: 16px;
+	line-height: 19.2px;
+	color: #161615;
+}
+
+.directions-agro__slDescp-slide-link {
+	margin-top: 35px;
+}
+
+.directions-agro__column-right {
+	flex: 0 0 960px;
+	height: 392px;
+	overflow: hidden;
+	margin-right: -380px;
+}
+
+.directions-agro__slImg {
+	display: flex;
+	width: 960px;
+	height: 392px;
+	border-radius: 25px 0 0 0;
+}
+
+.directions-agro__slImg-slide {
+	height: 100%;
+	border-radius: 25px 0 25px 0;
+	overflow: hidden;
+}
+
+//========================================================================================================================================================
+
 .our-production {
 	padding: 30px 0 60px 0;
 }
