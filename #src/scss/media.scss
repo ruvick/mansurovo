@@ -5,6 +5,16 @@
 	}
 }
 
+@media (max-width: 1500px) {
+	.directions-agro__column-left {
+		flex: 0 1 550px;
+	}
+
+	.directions-agro__slDescp-slide {
+		padding-right: 35px;
+	}
+}
+
 @media (max-width: 1460px) {
 	._container {
 		padding: 0 10px;
@@ -52,6 +62,11 @@
 
 	.connect-agro__block-column-form {
 		padding-top: 0;
+	}
+
+	.slider-bg-pagination-fraction {
+		position: absolute;
+		top: 25%;
 	}
 }
 
@@ -149,6 +164,45 @@
 
 	.our-production__card-img {
 		height: 230px;
+	}
+
+	.slider-bg-pagination-fraction {
+		position: absolute;
+		top: 15%;
+	}
+
+	.directions-agro__column-right {
+		flex: 0 0 900px;
+		margin-right: -350px;
+	}
+
+	.directions-agro__slDescp-slide-title {
+		font-size: 38px;
+	}
+}
+
+@media (max-width: 940px) {
+	.directions-agro__wrap {
+		flex-wrap: wrap;
+	}
+
+	.directions-agro__column-left {
+		flex: 0 1 100%;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+
+	.directions-agro__slDescp-slide {
+		padding-right: 0;
+	}
+
+	.directions-agro__column-right {
+		flex: 0 1 100%;
+		margin-right: -350px;
+	}
+
+	.directions-agro ._container {
+		padding-right: 0;
 	}
 }
 
@@ -541,6 +595,56 @@
 	.our-production__column {
 		padding: 0 5px;
 	}
+
+	.slider-bg-pagination-fraction {
+		display: none;
+	}
+
+	.directions-agro__title {
+		font-size: 14px;
+		margin-bottom: 13px;
+	}
+
+	.directSlDescp-pagination-fraction {
+		margin-bottom: 15px;
+	}
+
+	.directions-agro__slDescp-slide-title {
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+
+	.directions-agro__slDescp-slide-subtitle {
+		font-size: 14px;
+	}
+
+	.directions-agro__slDescp-slide-link {
+		margin-top: 15px;
+	}
+
+	.directions-agro__buttonBlock {
+		display: none;
+	}
+
+	.directions-agro__column-right {
+		height: auto;
+		margin-right: 0;
+	}
+
+	.directions-agro__slImg {
+		max-width: 100%;
+		width: 100%;
+		height: 392px;
+		height: auto;
+	}
+
+	.directions-agro ._container {
+		padding-right: 10px;
+	}
+
+	.directions-agro__slImg .swiper-wrapper {
+		height: 100% !important;
+	}
 }
 
 @media (max-width: 700px) {
@@ -634,6 +738,14 @@
 	.popup__form-block {
 		flex: 0 1 100%;
 	}
+
+	.directions-agro ._container {
+		padding-right: 0;
+	}
+
+	.directions-agro__slDescp-slide {
+		padding-right: 10px;
+	}
 }
 
 @media (max-width: 480px) {
@@ -708,6 +820,14 @@
 
 	.our-production__card-img {
 		height: 190px;
+	}
+
+	.directions-agro__slDescp-slide-link {
+		width: 100%;
+	}
+
+	.title {
+		font-size: 22px;
 	}
 }
 

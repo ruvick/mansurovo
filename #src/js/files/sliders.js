@@ -226,27 +226,36 @@ let directSlImg = new Swiper('.directSlImg', {
 	// 	nextEl: '.swiper-button-next',
 	// 	prevEl: '.swiper-button-prev',
 	// },
-	/*
 	breakpoints: {
 		320: {
-			slidesPerView: 1,
-			spaceBetween: 0,
+			slidesPerView: 1.1,
+			spaceBetween: 8,
 			autoHeight: true,
 		},
-		768: {
+		346: {
+			slidesPerView: 1.2,
+			spaceBetween: 10,
+			autoHeight: true,
+		},
+		415: {
+			slidesPerView: 1.5,
+			spaceBetween: 10,
+			autoHeight: true,
+		},
+		516: {
 			slidesPerView: 2,
+			spaceBetween: 10,
+			autoHeight: true,
+		},
+		769: {
+			slidesPerView: 1.5,
 			spaceBetween: 20,
 		},
-		992: {
-			slidesPerView: 3,
-			spaceBetween: 20,
-		},
-		1268: {
-			slidesPerView: 4,
-			spaceBetween: 30,
+		811: {
+			slidesPerView: 1.3,
+			spaceBetween: 34,
 		},
 	},
-	*/
 	on: {
 		lazyImageReady: function () {
 			ibg();
