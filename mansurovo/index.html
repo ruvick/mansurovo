@@ -1,733 +1,1 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-	<title>Главная</title>
-	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css">
-	<!-- <link rel="stylesheet" href="css/fancybox.css"> -->
-	<link rel="icon" type="image/png" href="img/favicons/icon256.png" sizes="256x256">
-	<link rel="icon" type="image/png" href="img/favicons/icon128.png" sizes="128x128">
-	<link rel="icon" type="image/png" href="img/favicons/icon64.png" sizes="64x64">
-	<link rel="icon" type="image/png" href="img/favicons/icon32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="img/favicons/icon16.png" sizes="16x16">
-	<link rel="icon" type="image/png" href="img/favicons/icon.svg" sizes="any">
-	<link rel="shortcut icon" href="favicon.ico">
-	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-<body>
-	<div class="wrapper">
-		<header id="header" class="header">
-	<div class="header__container _container">
-
-		<div class="header__row d-flex">
-
-			<ul class="menu-list header__menu-list d-flex">
-				<li class="menu-list__item"><a href="#" class="menu-list__link">О компании</a></li>
-				<li class="menu-list__item"><a href="#" class="menu-list__link">Направления деятельности</a></li>
-				<li class="menu-list__item"><a href="#" class="menu-list__link">Продукция</a></li>
-				<li class="menu-list__item"><a href="#" class="menu-list__link">Вакансии</a></li>
-				<li class="menu-list__item"><a href="#" class="menu-list__link">Контакты</a></li>
-			</ul>
-			<!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'menu__list',
-						'container_class' => 'menu__list','container' => false )); ?>  -->
-
-			<a href="index.html" class="logo-icon header__logo">
-				<!-- <? bloginfo("url"); ?> -->
-			</a>
-
-			<div class="header__navigation">
-
-				<a href="#" class="header__conf-policy">Политика конфиденциальности</a>
-
-				<button class="header__search-icon"></button>
-
-				<div class="header__icon-menu">
-					<div class="header__icon-menu-text">Меню</div>
-					<div class="icon-menu" aria-label="Бургер меню">
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-				</div>
-
-			</div>
-
-		</div>
-</header>
-
-<!-- Мобильное меню -->
-<div class="mob-menu header__mob-menu">
-	<ul class="mob-menu__list">
-		<li class="mob-menu__item"><a href="#" class="mob-menu__link">О компании</a></li>
-		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Направления деятельности</a></li>
-		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Продукция</a></li>
-		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Вакансии</a></li>
-		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Контакты</a></li>
-	</ul>
-	<!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'mob-menu__list',
-		'container_class' => 'mob-menu__list','container' => false )); ?>  -->
-	<a href="#" class="header__conf-policy header__conf-policy-mob">Политика конфиденциальности</a>
-	<a href="#callback" class="header__popup-link header__popup-link_mob _popup-link btn">ЗАКАЗАТЬ ЗВОНОК</a>
-</div>
-
-<!-- Строка мобильного поиска -->
-<div class="search header__search-mob">
-	<form role="search" method="get" action="<?php echo home_url( '/' ) ?>" id="searchform" class="search__form">
-		<input type="text" class="search__input input" placeholder="Поиск" value="<?php echo get_search_query() ?>" name="s"
-			id="s">
-		<button type="submit" id="searchsubmit" class="search__btn" tabindex="2" value=""></button>
-	</form>
-</div>
-		<main class="page">
-
-			
-
-			<section id="slider-main" class="slider-main">
-
-				<div class="slider-bg-wrap ">
-					<div class="slider-bg _swiper">
-
-						<div class="slider-bg__slide slider__slide slider-main__slide-1">
-							<div class="slider-bg__nuar_blk nuar_blk"></div>
-							<div class="slider-bg__container _container">
-
-								<div class="slider-bg__title-block">
-									<h1 class="slider-bg__title">
-										Агрокомплекс <br>
-										«Мансурово»
-									</h1>
-									<p class="slider-bg__subtitle">
-										Творчество в сфере агропромышленности <br>
-										с активным использованием инноваций
-									</p>
-								</div>
-
-								<div class="slider-bg__inner">
-
-									<div class="slider-bg__column">
-										<div class="slider-bg__card slider-bg__card_01">
-											<h3 class="slider-bg__card-title">3788 +</h3>
-											<p class="slider-bg__card-subtitle">
-												Голов крупного рогатого <br>
-												скота
-											</p>
-										</div>
-									</div>
-
-									<div class="slider-bg__column">
-										<div class="slider-bg__card slider-bg__card_02">
-											<h3 class="slider-bg__card-title">24 000+</h3>
-											<p class="slider-bg__card-subtitle">
-												Гектара земли в ежегодно <br>
-												в обработке
-											</p>
-										</div>
-									</div>
-
-									<div class="slider-bg__column">
-										<div class="slider-bg__card slider-bg__card_03">
-											<h3 class="slider-bg__card-title">320 +</h3>
-											<p class="slider-bg__card-subtitle">
-												Гектара производственных <br>
-												пощадей
-											</p>
-										</div>
-									</div>
-
-									<div class="slider-bg__column">
-										<div class="slider-bg__card slider-bg__card_04">
-											<h3 class="slider-bg__card-title">220 +</h3>
-											<p class="slider-bg__card-subtitle">
-												Единиц самоходной техники <br>
-												крупнейших производителей
-											</p>
-										</div>
-									</div>
-
-								</div>
-
-							</div>
-						</div>
-
-						<div class="slider-bg__slide slider__slide slider-main__slide-1">
-							<div class="slider-bg__nuar_blk nuar_blk"></div>
-							<div class="slider-bg__container _container">
-
-								<div class="slider-bg__title-block">
-									<h1 class="slider-bg__title">
-										Агрокомплекс <br>
-										«Мансурово»
-									</h1>
-									<p class="slider-bg__subtitle">
-										Творчество в сфере агропромышленности <br>
-										с активным использованием инноваций
-									</p>
-								</div>
-
-								<div class="slider-bg__inner">
-
-									<div class="slider-bg__column">
-										<div class="slider-bg__card slider-bg__card_01">
-											<h3 class="slider-bg__card-title">3788 +</h3>
-											<p class="slider-bg__card-subtitle">
-												Голов крупного рогатого <br>
-												скота
-											</p>
-										</div>
-									</div>
-
-									<div class="slider-bg__column">
-										<div class="slider-bg__card slider-bg__card_02">
-											<h3 class="slider-bg__card-title">24 000+</h3>
-											<p class="slider-bg__card-subtitle">
-												Гектара земли в ежегодно <br>
-												в обработке
-											</p>
-										</div>
-									</div>
-
-									<div class="slider-bg__column">
-										<div class="slider-bg__card slider-bg__card_03">
-											<h3 class="slider-bg__card-title">320 +</h3>
-											<p class="slider-bg__card-subtitle">
-												Гектара производственных <br>
-												пощадей
-											</p>
-										</div>
-									</div>
-
-									<div class="slider-bg__column">
-										<div class="slider-bg__card slider-bg__card_04">
-											<h3 class="slider-bg__card-title">220 +</h3>
-											<p class="slider-bg__card-subtitle">
-												Единиц самоходной техники <br>
-												крупнейших производителей
-											</p>
-										</div>
-									</div>
-
-								</div>
-
-							</div>
-						</div>
-
-						<div class="slider-bg__slide slider__slide slider-main__slide-1">
-							<div class="slider-bg__nuar_blk nuar_blk"></div>
-							<div class="slider-bg__container _container">
-
-								<div class="slider-bg__title-block">
-									<h1 class="slider-bg__title">
-										Агрокомплекс <br>
-										«Мансурово»
-									</h1>
-									<p class="slider-bg__subtitle">
-										Творчество в сфере агропромышленности <br>
-										с активным использованием инноваций
-									</p>
-								</div>
-
-								<div class="slider-bg__inner">
-
-									<div class="slider-bg__column">
-										<div class="slider-bg__card slider-bg__card_01">
-											<h3 class="slider-bg__card-title">3788 +</h3>
-											<p class="slider-bg__card-subtitle">
-												Голов крупного рогатого <br>
-												скота
-											</p>
-										</div>
-									</div>
-
-									<div class="slider-bg__column">
-										<div class="slider-bg__card slider-bg__card_02">
-											<h3 class="slider-bg__card-title">24 000+</h3>
-											<p class="slider-bg__card-subtitle">
-												Гектара земли в ежегодно <br>
-												в обработке
-											</p>
-										</div>
-									</div>
-
-									<div class="slider-bg__column">
-										<div class="slider-bg__card slider-bg__card_03">
-											<h3 class="slider-bg__card-title">320 +</h3>
-											<p class="slider-bg__card-subtitle">
-												Гектара производственных <br>
-												пощадей
-											</p>
-										</div>
-									</div>
-
-									<div class="slider-bg__column">
-										<div class="slider-bg__card slider-bg__card_04">
-											<h3 class="slider-bg__card-title">220 +</h3>
-											<p class="slider-bg__card-subtitle">
-												Единиц самоходной техники <br>
-												крупнейших производителей
-											</p>
-										</div>
-									</div>
-
-								</div>
-
-							</div>
-						</div>
-
-					</div>
-					<div class="slider-bg-pagination-fraction"></div>
-				</div>
-
-			</section>
-
-			<section id="directions-agro" class="directions-agro section">
-				<div class="_container">
-
-					<div class="directions-agro__wrap d-flex">
-
-						<div class="directions-agro__column directions-agro__column-left">
-							<h6 class="directions-agro__title">ОСНОВНЫЕ НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ</h6>
-
-							<div class="directSlDescp-pagination-fraction"></div>
-
-							<div class="directions-agro__slDescp directSlDescp slider _swiper">
-
-								<div class="directions-agro__slDescp-slide slider__slide">
-									<h2 class="directions-agro__slDescp-slide-title">Растеневодство</h2>
-									<p class="directions-agro__slDescp-slide-subtitle">
-										Земельный банк компании насчитывает порядка 27 000 гектаров и расположен единым массивом на
-										территории трех районов Курской области. Мы выращиваем: озимую и яровую пшеницу овес, ячмень,
-										подсолнечник, кукурузу, сою.
-									</p>
-									<a href="#" class="directions-agro__slDescp-slide-link btn">Подробнее</a>
-								</div>
-
-								<div class="directions-agro__slDescp-slide slider__slide">
-									<h2 class="directions-agro__slDescp-slide-title">Животноводство</h2>
-									<p class="directions-agro__slDescp-slide-subtitle">
-										Земельный банк компании насчитывает порядка 27 000 гектаров и расположен единым массивом на
-										территории трех районов Курской области. Мы выращиваем: озимую и яровую пшеницу овес, ячмень,
-										подсолнечник, кукурузу, сою.
-									</p>
-									<a href="#" class="directions-agro__slDescp-slide-link btn">Подробнее</a>
-								</div>
-
-								<div class="directions-agro__slDescp-slide slider__slide">
-									<h2 class="directions-agro__slDescp-slide-title">Растеневодство</h2>
-									<p class="directions-agro__slDescp-slide-subtitle">
-										Земельный банк компании насчитывает порядка 27 000 гектаров и расположен единым массивом на
-										территории трех районов Курской области. Мы выращиваем: озимую и яровую пшеницу овес, ячмень,
-										подсолнечник, кукурузу, сою.
-									</p>
-									<a href="#" class="directions-agro__slDescp-slide-link btn">Подробнее</a>
-								</div>
-
-							</div>
-							<div class="directions-agro__buttonBlock">
-								<button class="swiper-button swiper-button-next"></button>
-								<button class="swiper-button swiper-button-prev"></button>
-							</div>
-
-						</div>
-
-						<div class="directions-agro__column directions-agro__column-right">
-
-							<div class="directions-agro__slImg directSlImg slider _swiper">
-
-								<div class="directions-agro__slImg-slide slider__slide">
-									<img src="img/directions/01.jpg" alt="">
-								</div>
-
-								<div class="directions-agro__slImg-slide slider__slide">
-									<img src="img/directions/01.jpg" alt="">
-								</div>
-
-								<div class="directions-agro__slImg-slide slider__slide">
-									<img src="img/directions/01.jpg" alt="">
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-			</section>
-
-			<section id="about-agro" class="about-agro section">
-				<div class="_container">
-
-					<h2 class="about-agro__title title">
-						Более 12 лет мы твердо соблюдаем <br>
-						наши принципы
-					</h2>
-
-					<div class="about-agro__inner d-flex">
-
-						<div class="about-agro__column">
-							<div class="about-agro__card">
-								<span class="about-agro__card-icon about-agro__card-icon_01"></span>
-								<h3 class="about-agro__card-title">Инновации</h3>
-								<div class="about-agro__card-line"></div>
-								<p class="about-agro__card-text">
-									На всех полях нашего агрокомплекса с 2011
-									года внедряется технология точного
-									земледелия что позволяет экономить
-									ресурсы и использовать сельхоз угодия по
-									максимуму
-								</p>
-							</div>
-						</div>
-
-						<div class="about-agro__column">
-							<div class="about-agro__card">
-								<span class="about-agro__card-icon about-agro__card-icon_02"></span>
-								<h3 class="about-agro__card-title">Качество</h3>
-								<div class="about-agro__card-line"></div>
-								<p class="about-agro__card-text">
-									Мы осуществляем постоянный контроль
-									качества как материалов задействованных
-									в производстве так и готовой продукции
-									выпускаемой нашими предприятиями
-								</p>
-							</div>
-						</div>
-
-						<div class="about-agro__column">
-							<div class="about-agro__card">
-								<span class="about-agro__card-icon about-agro__card-icon_03"></span>
-								<h3 class="about-agro__card-title">Инновации</h3>
-								<div class="about-agro__card-line"></div>
-								<p class="about-agro__card-text">
-									На сегодняшний день наш агрокомплекс
-									дает 470 рабочих мест на территории
-									Курской области, и этот показатель
-									непрерывно растет. Мы ценим труд наших
-									специалистов.
-								</p>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-			</section>
-
-			<section id="our-production" class="our-production section">
-				<div class="_container">
-
-					<h2 class="our-production__tilte title">Наша продукция</h2>
-
-					<div class="our-production__inner">
-
-						<div class="our-production__column">
-							<a href="" class="our-production__card">
-								<div class="our-production__card-img our-production__card-img_01"></div>
-								<p class="our-production__card-text">ЗЕРНО</p>
-							</a>
-						</div>
-
-						<div class="our-production__column">
-							<a href="" class="our-production__card">
-								<div class="our-production__card-img our-production__card-img_02"></div>
-								<p class="our-production__card-text">ЛОШАДИ</p>
-							</a>
-						</div>
-
-						<div class="our-production__column">
-							<a href="" class="our-production__card">
-								<div class="our-production__card-img our-production__card-img_03"></div>
-								<p class="our-production__card-text">МЕД</p>
-							</a>
-						</div>
-
-						<div class="our-production__column">
-							<a href="" class="our-production__card">
-								<div class="our-production__card-img">
-									<span class="our-production__card-icon-link"></span>
-									<p class="our-production__card-text-link">Перейти в каталог</p>
-									<span class="our-production__card-icon-link-arrow"></span>
-								</div>
-							</a>
-						</div>
-
-					</div>
-
-				</div>
-			</section>
-
-			<section id="jobs-agro" class="jobs-agro section">
-				<div class="_container">
-
-					<div class="jobs-agro__inner">
-
-						<div class="jobs-agro__column jobs-agro__column-descp">
-							<h2 class="jobs-agro__card-title">Вакансии агрокомплекса</h2>
-							<p class="jobs-agro__card-subtitle">
-								Акционерное Общество «Агрокомплекс «Мансурово» - это компания
-								где можно начать и продолжить свой карьерный рост. Мы всегда
-								рады новым талантливым и инициативным специалистам.
-							</p>
-							<a href="#" class="jobs-agro__card-button btn">Смотреть все вакансии</a>
-						</div>
-
-						<div class="jobs-agro__column">
-							<div class="jobs-agro__img">
-								<img src="img/jobs-agro-img.jpg" alt="">
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-			</section>
-
-			<section id="news-agro" class="news-agro section">
-				<div class="_container">
-
-					<h2 class="news-agro__title title">Новости нашей компании</h2>
-
-					<div class="news-agro__inner">
-
-						<div class="news-agro__column">
-							<div class="news-agro__card">
-								<a href="#" class="news-agro__card-img">
-									<img src="img/news-agro/01.jpg" alt="">
-								</a>
-								<div class="news-agro__card-descp">
-									<span class="news-agro__card-descp-date">25.07.2022</span>
-									<h3 class="news-agro__card-descp-title">
-										«Зерно России – 2021».
-										Как прошел форум и что
-										мы отметили для себя
-									</h3>
-									<a href="#" class="news-agro__card-descp-btn">Подробнее...</a>
-								</div>
-							</div>
-						</div>
-
-						<div class="news-agro__column">
-							<div class="news-agro__card">
-								<a href="#" class="news-agro__card-img">
-									<img src="img/news-agro/02.jpg" alt="">
-								</a>
-								<div class="news-agro__card-descp">
-									<span class="news-agro__card-descp-date">04.07.2022</span>
-									<h3 class="news-agro__card-descp-title">
-										Закрытие бегового сезона
-										на Курском ипподроме
-									</h3>
-									<a href="#" class="news-agro__card-descp-btn">Подробнее...</a>
-								</div>
-							</div>
-						</div>
-
-						<div class="news-agro__column">
-							<div class="news-agro__card">
-								<a href="#" class="news-agro__card-img">
-									<img src="img/news-agro/03.jpg" alt="">
-								</a>
-								<div class="news-agro__card-descp">
-									<span class="news-agro__card-descp-date">08.05.2022</span>
-									<h3 class="news-agro__card-descp-title">
-										Агрокомплекс «Мансурово»
-										поздравляет с Днем Победы!
-									</h3>
-									<a href="#" class="news-agro__card-descp-btn">Подробнее...</a>
-								</div>
-							</div>
-						</div>
-
-						<div class="news-agro__column">
-							<div class="news-agro__card">
-								<a href="#" class="news-agro__card-img">
-									<img src="img/news-agro/04.jpg" alt="">
-								</a>
-								<div class="news-agro__card-descp">
-									<span class="news-agro__card-descp-date">09.07.2019</span>
-									<h3 class="news-agro__card-descp-title">
-										"Курская Коренская ярмарка-2019"
-									</h3>
-									<a href="#" class="news-agro__card-descp-btn">Подробнее...</a>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-					<a href="#" class="news-agro__button btn">Смотреть все новости</a>
-
-				</div>
-			</section>
-
-			<section id="connect-agro" class="connect-agro section">
-				<div class="_container">
-
-					<div class="connect-agro__block d-flex">
-
-						<div class="connect-agro__block-column">
-							<h2 class="connect-agro__block-title">Свяжитесь с нами</h2>
-							<p class="connect-agro__block-subtitle">
-								Наши специалисты с радостью ответят на все <br>
-								интересующие Вас вопросы
-							</p>
-						</div>
-
-						<div class="connect-agro__block-column connect-agro__block-column-form">
-							<form action="#" class="connect-agro__block-formSelect">
-								<div class="connect-agro__block-formSelect-select">
-									<select name="form[]" class="form">
-										<option value="1" selected="selected">Выберите тему обращения</option>
-										<option value="2">Тема №1</option>
-										<option value="3">Тема №2</option>
-										<option value="4">Тема №3</option>
-										<option value="5">Тема №4</option>
-										<option value="6">Тема №5</option>
-									</select>
-								</div>
-								<button type="submit" class="connect-agro__block-formSelect-select-btn"></button>
-							</form>
-							<div class="connect-agro__block-contacts">
-								<a href="tel:+74712540630" class="connect-agro__block-contacts-phone">+7 (4712) 54-06-30</a>
-								<a href="mailto:info@mansurovoagro.ru"
-									class="connect-agro__block-contacts-email">info@mansurovoagro.ru</a>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-			</section>
-
-		</main>
-		<footer id="footer" class="footer">
-	<div class="footer__container _container">
-
-		<div class="footer__row d-flex">
-
-			<a href="index.html" class="logo-icon footer__logo">
-				<!-- <? bloginfo("url"); ?> -->
-			</a>
-
-			<ul class="footer__menu">
-				<li class="footer__menu-item"><a href="#" class="footer__menu-item-link">О компании</a></li>
-				<li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Направления деятельности</a></li>
-				<li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Продукция</a></li>
-				<li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Вакансии</a></li>
-				<li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Контакты</a></li>
-			</ul>
-
-		</div>
-
-	</div>
-</footer>
-	</div>
-	<!-- Popup-с формой -->
-<div class="popup popup_callback">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close" aria-label="Закрыть модальное окно"></div>
-			<div class="popup__item d-flex">
-				<div class="popup__img">
-					<img src="img/popup.jpg" alt="">
-				</div>
-				<div class="popup__form-block">
-					<h2>Заказать звонок</h2>
-					<p class="popup__notific">Оставьте заявку и мы свяжемся с Вами в течении 15 минут</p>
-					<form action="#" class="form">
-						<div class="form__line">
-							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Имя"
-								class="popup__form-input input _req">
-							<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Телефон"
-								class="popup__form-input input _phone _req">
-							<input id="email" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Email"
-								class="popup__form-input input _email _req">
-						</div>
-						<p class="popup__policy">Заполняя данную форму вы соглашаетесь с <a href="#">политикой
-								конфиденциальности</a></p>
-						<button class="popup__form-btn form__btn btn">Заказать</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- <a href="#callback" class="header__popup-link _popup-link">ЗАКАЗАТЬ ЗВОНОК</a> -->
-<!-- =============================================================================================================================== -->
-
-
-<div class="popup popup_popup">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close" aria-label="Закрыть модальное окно"></div>
-		</div>
-	</div>
-</div>
-<!-- =============================================================================================================================== -->
-
-<div class="popup popup_massagename-message">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close" aria-label="Закрыть модальное окно"></div>
-		</div>
-	</div>
-</div>
-<!-- =============================================================================================================================== -->
-
-<div class="popup popup_video">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close popup__close_video" aria-label="Закрыть модальное окно"></div>
-			<div class="popup__video _video"></div>
-		</div>
-	</div>
-</div>
-<!-- <a href="#video" data-video="stFOy0Noahg" class=" _popup-link">Открыть видео</a> -->
-<!-- =============================================================================================================================== -->
-
-<!-- Popup-CSS -->
-<!-- <div id="popup-2" class="popup-2">
-	<a href="#" class="popup__area-2"></a>
-	<div class="popup__body-2">
-		<div class="popup__content-2">
-
-			<a href="#" class="popup__close-2">Close</a>
-			<div class="popup__title">Заказать ворота Дешево!</div>
-			<div class="popup__text">
-				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний
-				Алютех и REHAU и Авелор
-			</div>
-			<div class="popup__text">
-				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний
-				Алютех и REHAU и Авелор
-			</div>
-			<div class="popup__text">
-				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний
-				Алютех и REHAU и Авелор
-			</div>
-			<div class="popup__text">
-				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний
-				Алютех и REHAU и Авелор
-			</div>
-			<div class="popup__text">
-				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний
-				Алютех и REHAU и Авелор
-			</div>
-
-		</div>
-	</div>
-</div> -->
-<!-- <a href="#popup-2" class="heading-info__button popup-link"></a> -->
-	<!-- Swiper -->
-<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script> -->
-<script src="js/vendors.min.js"></script>
-<script src="js/app.min.js"></script>
-</body>
-
-</html>
+<!DOCTYPE html><html lang="ru"><head>	<title>Главная</title>	<meta charset="UTF-8">	<meta name="format-detection" content="telephone=no">	<link rel="stylesheet" href="css/style.min.css?_v=20221205120425">	<!-- <link rel="stylesheet" href="css/fancybox.css?_v=20221205120425"> -->	<link rel="icon" type="image/png" href="img/favicons/icon256.png" sizes="256x256">	<link rel="icon" type="image/png" href="img/favicons/icon128.png" sizes="128x128">	<link rel="icon" type="image/png" href="img/favicons/icon64.png" sizes="64x64">	<link rel="icon" type="image/png" href="img/favicons/icon32.png" sizes="32x32">	<link rel="icon" type="image/png" href="img/favicons/icon16.png" sizes="16x16">	<link rel="icon" type="image/png" href="img/favicons/icon.svg" sizes="any">	<link rel="shortcut icon" href="favicon.ico">	<!-- <meta name="robots" content="noindex, nofollow"> -->	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->	<meta name="viewport" content="width=device-width, initial-scale=1.0"></head><body>	<div class="wrapper">		<header id="header" class="header">	<div class="header__container _container">		<div class="header__row d-flex">			<ul class="menu-list header__menu-list d-flex">				<li class="menu-list__item"><a href="#" class="menu-list__link">О компании</a></li>				<li class="menu-list__item"><a href="#" class="menu-list__link">Направления деятельности</a></li>				<li class="menu-list__item"><a href="#" class="menu-list__link">Продукция</a></li>				<li class="menu-list__item"><a href="#" class="menu-list__link">Вакансии</a></li>				<li class="menu-list__item"><a href="#" class="menu-list__link">Контакты</a></li>			</ul>			<!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'menu__list',						'container_class' => 'menu__list','container' => false )); ?>  -->			<a href="index.html" class="logo-icon header__logo">				<!-- <? bloginfo("url"); ?> -->			</a>			<div class="header__navigation">				<a href="#" class="header__conf-policy">Политика конфиденциальности</a>				<button class="header__search-icon"></button>				<div class="header__icon-menu">					<div class="header__icon-menu-text">Меню</div>					<div class="icon-menu" aria-label="Бургер меню">						<span></span>						<span></span>						<span></span>					</div>				</div>			</div>		</div></header><!-- Мобильное меню --><div class="mob-menu header__mob-menu">	<ul class="mob-menu__list">		<li class="mob-menu__item"><a href="#" class="mob-menu__link">О компании</a></li>		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Направления деятельности</a></li>		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Продукция</a></li>		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Вакансии</a></li>		<li class="mob-menu__item"><a href="#" class="mob-menu__link">Контакты</a></li>	</ul>	<!-- <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'mob-menu__list',		'container_class' => 'mob-menu__list','container' => false )); ?>  -->	<a href="#" class="header__conf-policy header__conf-policy-mob">Политика конфиденциальности</a>	<a href="#callback" class="header__popup-link header__popup-link_mob _popup-link btn">ЗАКАЗАТЬ ЗВОНОК</a></div><!-- Строка мобильного поиска --><div class="search header__search-mob">	<form role="search" method="get" action="<?php echo home_url( '/' ) ?>" id="searchform" class="search__form">		<input type="text" class="search__input input" placeholder="Поиск" value="<?php echo get_search_query() ?>" name="s"			id="s">		<button type="submit" id="searchsubmit" class="search__btn" tabindex="2" value=""></button>	</form></div>		<main class="page">						<section id="slider-main" class="slider-main">				<div class="slider-bg-wrap ">					<div class="slider-bg _swiper">						<div class="slider-bg__slide slider__slide slider-main__slide-1">							<div class="slider-bg__nuar_blk nuar_blk"></div>							<div class="slider-bg__container _container">								<div class="slider-bg__title-block">									<h1 class="slider-bg__title">										Агрокомплекс <br>										«Мансурово»									</h1>									<p class="slider-bg__subtitle">										Творчество в сфере агропромышленности <br>										с активным использованием инноваций									</p>								</div>								<div class="slider-bg__inner">									<div class="slider-bg__column">										<div class="slider-bg__card slider-bg__card_01">											<h3 class="slider-bg__card-title">3788 +</h3>											<p class="slider-bg__card-subtitle">												Голов крупного рогатого <br>												скота											</p>										</div>									</div>									<div class="slider-bg__column">										<div class="slider-bg__card slider-bg__card_02">											<h3 class="slider-bg__card-title">24 000+</h3>											<p class="slider-bg__card-subtitle">												Гектара земли в ежегодно <br>												в обработке											</p>										</div>									</div>									<div class="slider-bg__column">										<div class="slider-bg__card slider-bg__card_03">											<h3 class="slider-bg__card-title">320 +</h3>											<p class="slider-bg__card-subtitle">												Гектара производственных <br>												пощадей											</p>										</div>									</div>									<div class="slider-bg__column">										<div class="slider-bg__card slider-bg__card_04">											<h3 class="slider-bg__card-title">220 +</h3>											<p class="slider-bg__card-subtitle">												Единиц самоходной техники <br>												крупнейших производителей											</p>										</div>									</div>								</div>							</div>						</div>						<div class="slider-bg__slide slider__slide slider-main__slide-1">							<div class="slider-bg__nuar_blk nuar_blk"></div>							<div class="slider-bg__container _container">								<div class="slider-bg__title-block">									<h1 class="slider-bg__title">										Агрокомплекс <br>										«Мансурово»									</h1>									<p class="slider-bg__subtitle">										Творчество в сфере агропромышленности <br>										с активным использованием инноваций									</p>								</div>								<div class="slider-bg__inner">									<div class="slider-bg__column">										<div class="slider-bg__card slider-bg__card_01">											<h3 class="slider-bg__card-title">3788 +</h3>											<p class="slider-bg__card-subtitle">												Голов крупного рогатого <br>												скота											</p>										</div>									</div>									<div class="slider-bg__column">										<div class="slider-bg__card slider-bg__card_02">											<h3 class="slider-bg__card-title">24 000+</h3>											<p class="slider-bg__card-subtitle">												Гектара земли в ежегодно <br>												в обработке											</p>										</div>									</div>									<div class="slider-bg__column">										<div class="slider-bg__card slider-bg__card_03">											<h3 class="slider-bg__card-title">320 +</h3>											<p class="slider-bg__card-subtitle">												Гектара производственных <br>												пощадей											</p>										</div>									</div>									<div class="slider-bg__column">										<div class="slider-bg__card slider-bg__card_04">											<h3 class="slider-bg__card-title">220 +</h3>											<p class="slider-bg__card-subtitle">												Единиц самоходной техники <br>												крупнейших производителей											</p>										</div>									</div>								</div>							</div>						</div>						<div class="slider-bg__slide slider__slide slider-main__slide-1">							<div class="slider-bg__nuar_blk nuar_blk"></div>							<div class="slider-bg__container _container">								<div class="slider-bg__title-block">									<h1 class="slider-bg__title">										Агрокомплекс <br>										«Мансурово»									</h1>									<p class="slider-bg__subtitle">										Творчество в сфере агропромышленности <br>										с активным использованием инноваций									</p>								</div>								<div class="slider-bg__inner">									<div class="slider-bg__column">										<div class="slider-bg__card slider-bg__card_01">											<h3 class="slider-bg__card-title">3788 +</h3>											<p class="slider-bg__card-subtitle">												Голов крупного рогатого <br>												скота											</p>										</div>									</div>									<div class="slider-bg__column">										<div class="slider-bg__card slider-bg__card_02">											<h3 class="slider-bg__card-title">24 000+</h3>											<p class="slider-bg__card-subtitle">												Гектара земли в ежегодно <br>												в обработке											</p>										</div>									</div>									<div class="slider-bg__column">										<div class="slider-bg__card slider-bg__card_03">											<h3 class="slider-bg__card-title">320 +</h3>											<p class="slider-bg__card-subtitle">												Гектара производственных <br>												пощадей											</p>										</div>									</div>									<div class="slider-bg__column">										<div class="slider-bg__card slider-bg__card_04">											<h3 class="slider-bg__card-title">220 +</h3>											<p class="slider-bg__card-subtitle">												Единиц самоходной техники <br>												крупнейших производителей											</p>										</div>									</div>								</div>							</div>						</div>					</div>					<div class="slider-bg-pagination-fraction"></div>				</div>			</section>			<section id="directions-agro" class="directions-agro section">				<div class="_container">					<div class="directions-agro__wrap d-flex">						<div class="directions-agro__column directions-agro__column-left">							<h6 class="directions-agro__title">ОСНОВНЫЕ НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ</h6>							<div class="directSlDescp-pagination-fraction"></div>							<div class="directions-agro__slDescp directSlDescp slider _swiper">								<div class="directions-agro__slDescp-slide slider__slide">									<h2 class="directions-agro__slDescp-slide-title">Растеневодство</h2>									<p class="directions-agro__slDescp-slide-subtitle">										Земельный банк компании насчитывает порядка 27 000 гектаров и расположен единым массивом на										территории трех районов Курской области. Мы выращиваем: озимую и яровую пшеницу овес, ячмень,										подсолнечник, кукурузу, сою.									</p>									<a href="#" class="directions-agro__slDescp-slide-link btn">Подробнее</a>								</div>								<div class="directions-agro__slDescp-slide slider__slide">									<h2 class="directions-agro__slDescp-slide-title">Животноводство</h2>									<p class="directions-agro__slDescp-slide-subtitle">										Земельный банк компании насчитывает порядка 27 000 гектаров и расположен единым массивом на										территории трех районов Курской области. Мы выращиваем: озимую и яровую пшеницу овес, ячмень,										подсолнечник, кукурузу, сою.									</p>									<a href="#" class="directions-agro__slDescp-slide-link btn">Подробнее</a>								</div>								<div class="directions-agro__slDescp-slide slider__slide">									<h2 class="directions-agro__slDescp-slide-title">Растеневодство</h2>									<p class="directions-agro__slDescp-slide-subtitle">										Земельный банк компании насчитывает порядка 27 000 гектаров и расположен единым массивом на										территории трех районов Курской области. Мы выращиваем: озимую и яровую пшеницу овес, ячмень,										подсолнечник, кукурузу, сою.									</p>									<a href="#" class="directions-agro__slDescp-slide-link btn">Подробнее</a>								</div>							</div>							<div class="directions-agro__buttonBlock">								<button class="swiper-button swiper-button-next"></button>								<button class="swiper-button swiper-button-prev"></button>							</div>						</div>						<div class="directions-agro__column directions-agro__column-right">							<div class="directions-agro__slImg directSlImg slider _swiper">								<div class="directions-agro__slImg-slide slider__slide">									<picture><source srcset="img/directions/01.webp" type="image/webp"><img src="img/directions/01.jpg?_v=1670231065489" alt=""></picture>								</div>								<div class="directions-agro__slImg-slide slider__slide">									<picture><source srcset="img/directions/01.webp" type="image/webp"><img src="img/directions/01.jpg?_v=1670231065489" alt=""></picture>								</div>								<div class="directions-agro__slImg-slide slider__slide">									<picture><source srcset="img/directions/01.webp" type="image/webp"><img src="img/directions/01.jpg?_v=1670231065489" alt=""></picture>								</div>							</div>						</div>					</div>				</div>			</section>			<section id="about-agro" class="about-agro section">				<div class="_container">					<h2 class="about-agro__title title">						Более 12 лет мы твердо соблюдаем <br>						наши принципы					</h2>					<div class="about-agro__inner d-flex">						<div class="about-agro__column">							<div class="about-agro__card">								<span class="about-agro__card-icon about-agro__card-icon_01"></span>								<h3 class="about-agro__card-title">Инновации</h3>								<div class="about-agro__card-line"></div>								<p class="about-agro__card-text">									На всех полях нашего агрокомплекса с 2011									года внедряется технология точного									земледелия что позволяет экономить									ресурсы и использовать сельхоз угодия по									максимуму								</p>							</div>						</div>						<div class="about-agro__column">							<div class="about-agro__card">								<span class="about-agro__card-icon about-agro__card-icon_02"></span>								<h3 class="about-agro__card-title">Качество</h3>								<div class="about-agro__card-line"></div>								<p class="about-agro__card-text">									Мы осуществляем постоянный контроль									качества как материалов задействованных									в производстве так и готовой продукции									выпускаемой нашими предприятиями								</p>							</div>						</div>						<div class="about-agro__column">							<div class="about-agro__card">								<span class="about-agro__card-icon about-agro__card-icon_03"></span>								<h3 class="about-agro__card-title">Инновации</h3>								<div class="about-agro__card-line"></div>								<p class="about-agro__card-text">									На сегодняшний день наш агрокомплекс									дает 470 рабочих мест на территории									Курской области, и этот показатель									непрерывно растет. Мы ценим труд наших									специалистов.								</p>							</div>						</div>					</div>				</div>			</section>			<section id="our-production" class="our-production section">				<div class="_container">					<h2 class="our-production__tilte title">Наша продукция</h2>					<div class="our-production__inner">						<div class="our-production__column">							<a href="" class="our-production__card">								<div class="our-production__card-img our-production__card-img_01"></div>								<p class="our-production__card-text">ЗЕРНО</p>							</a>						</div>						<div class="our-production__column">							<a href="" class="our-production__card">								<div class="our-production__card-img our-production__card-img_02"></div>								<p class="our-production__card-text">ЛОШАДИ</p>							</a>						</div>						<div class="our-production__column">							<a href="" class="our-production__card">								<div class="our-production__card-img our-production__card-img_03"></div>								<p class="our-production__card-text">МЕД</p>							</a>						</div>						<div class="our-production__column">							<a href="" class="our-production__card">								<div class="our-production__card-img">									<span class="our-production__card-icon-link"></span>									<p class="our-production__card-text-link">Перейти в каталог</p>									<span class="our-production__card-icon-link-arrow"></span>								</div>							</a>						</div>					</div>				</div>			</section>			<section id="jobs-agro" class="jobs-agro section">				<div class="_container">					<div class="jobs-agro__inner">						<div class="jobs-agro__column jobs-agro__column-descp">							<h2 class="jobs-agro__card-title">Вакансии агрокомплекса</h2>							<p class="jobs-agro__card-subtitle">								Акционерное Общество «Агрокомплекс «Мансурово» - это компания								где можно начать и продолжить свой карьерный рост. Мы всегда								рады новым талантливым и инициативным специалистам.							</p>							<a href="#" class="jobs-agro__card-button btn">Смотреть все вакансии</a>						</div>						<div class="jobs-agro__column">							<div class="jobs-agro__img">								<picture><source srcset="img/jobs-agro-img.webp" type="image/webp"><img src="img/jobs-agro-img.jpg?_v=1670231065489" alt=""></picture>							</div>						</div>					</div>				</div>			</section>			<section id="news-agro" class="news-agro section">				<div class="_container">					<h2 class="news-agro__title title">Новости нашей компании</h2>					<div class="news-agro__inner">						<div class="news-agro__column">							<div class="news-agro__card">								<a href="#" class="news-agro__card-img">									<picture><source srcset="img/news-agro/01.webp" type="image/webp"><img src="img/news-agro/01.jpg?_v=1670231065489" alt=""></picture>								</a>								<div class="news-agro__card-descp">									<span class="news-agro__card-descp-date">25.07.2022</span>									<h3 class="news-agro__card-descp-title">										«Зерно России – 2021».										Как прошел форум и что										мы отметили для себя									</h3>									<a href="#" class="news-agro__card-descp-btn">Подробнее...</a>								</div>							</div>						</div>						<div class="news-agro__column">							<div class="news-agro__card">								<a href="#" class="news-agro__card-img">									<picture><source srcset="img/news-agro/02.webp" type="image/webp"><img src="img/news-agro/02.jpg?_v=1670231065489" alt=""></picture>								</a>								<div class="news-agro__card-descp">									<span class="news-agro__card-descp-date">04.07.2022</span>									<h3 class="news-agro__card-descp-title">										Закрытие бегового сезона										на Курском ипподроме									</h3>									<a href="#" class="news-agro__card-descp-btn">Подробнее...</a>								</div>							</div>						</div>						<div class="news-agro__column">							<div class="news-agro__card">								<a href="#" class="news-agro__card-img">									<picture><source srcset="img/news-agro/03.webp" type="image/webp"><img src="img/news-agro/03.jpg?_v=1670231065489" alt=""></picture>								</a>								<div class="news-agro__card-descp">									<span class="news-agro__card-descp-date">08.05.2022</span>									<h3 class="news-agro__card-descp-title">										Агрокомплекс «Мансурово»										поздравляет с Днем Победы!									</h3>									<a href="#" class="news-agro__card-descp-btn">Подробнее...</a>								</div>							</div>						</div>						<div class="news-agro__column">							<div class="news-agro__card">								<a href="#" class="news-agro__card-img">									<picture><source srcset="img/news-agro/04.webp" type="image/webp"><img src="img/news-agro/04.jpg?_v=1670231065489" alt=""></picture>								</a>								<div class="news-agro__card-descp">									<span class="news-agro__card-descp-date">09.07.2019</span>									<h3 class="news-agro__card-descp-title">										"Курская Коренская ярмарка-2019"									</h3>									<a href="#" class="news-agro__card-descp-btn">Подробнее...</a>								</div>							</div>						</div>					</div>					<a href="#" class="news-agro__button btn">Смотреть все новости</a>				</div>			</section>			<section id="connect-agro" class="connect-agro section">				<div class="_container">					<div class="connect-agro__block d-flex">						<div class="connect-agro__block-column">							<h2 class="connect-agro__block-title">Свяжитесь с нами</h2>							<p class="connect-agro__block-subtitle">								Наши специалисты с радостью ответят на все <br>								интересующие Вас вопросы							</p>						</div>						<div class="connect-agro__block-column connect-agro__block-column-form">							<form action="#" class="connect-agro__block-formSelect">								<div class="connect-agro__block-formSelect-select">									<select name="form[]" class="form">										<option value="1" selected="selected">Выберите тему обращения</option>										<option value="2">Тема №1</option>										<option value="3">Тема №2</option>										<option value="4">Тема №3</option>										<option value="5">Тема №4</option>										<option value="6">Тема №5</option>									</select>								</div>								<button type="submit" class="connect-agro__block-formSelect-select-btn"></button>							</form>							<div class="connect-agro__block-contacts">								<a href="tel:+74712540630" class="connect-agro__block-contacts-phone">+7 (4712) 54-06-30</a>								<a href="mailto:info@mansurovoagro.ru"									class="connect-agro__block-contacts-email">info@mansurovoagro.ru</a>							</div>						</div>					</div>				</div>			</section>		</main>		<footer id="footer" class="footer">	<div class="footer__container _container">		<div class="footer__row d-flex">			<a href="index.html" class="logo-icon footer__logo">				<!-- <? bloginfo("url"); ?> -->			</a>			<ul class="footer__menu">				<li class="footer__menu-item"><a href="#" class="footer__menu-item-link">О компании</a></li>				<li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Направления деятельности</a></li>				<li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Продукция</a></li>				<li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Вакансии</a></li>				<li class="footer__menu-item"><a href="#" class="footer__menu-item-link">Контакты</a></li>			</ul>		</div>	</div></footer>	</div>	<!-- Popup-с формой --><div class="popup popup_callback">	<div class="popup__content">		<div class="popup__body">			<div class="popup__close" aria-label="Закрыть модальное окно"></div>			<div class="popup__item d-flex">				<div class="popup__img">					<picture><source srcset="img/popup.webp" type="image/webp"><img src="img/popup.jpg?_v=1670231065489" alt=""></picture>				</div>				<div class="popup__form-block">					<h2>Заказать звонок</h2>					<p class="popup__notific">Оставьте заявку и мы свяжемся с Вами в течении 15 минут</p>					<form action="#" class="form">						<div class="form__line">							<input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Имя"								class="popup__form-input input _req">							<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Телефон"								class="popup__form-input input _phone _req">							<input id="email" autocomplete="off" type="text" name="form[]" data-error="Заполните поля" data-value="Email"								class="popup__form-input input _email _req">						</div>						<p class="popup__policy">Заполняя данную форму вы соглашаетесь с <a href="#">политикой								конфиденциальности</a></p>						<button class="popup__form-btn form__btn btn">Заказать</button>					</form>				</div>			</div>		</div>	</div></div><!-- <a href="#callback" class="header__popup-link _popup-link">ЗАКАЗАТЬ ЗВОНОК</a> --><!-- =============================================================================================================================== --><div class="popup popup_popup">	<div class="popup__content">		<div class="popup__body">			<div class="popup__close" aria-label="Закрыть модальное окно"></div>		</div>	</div></div><!-- =============================================================================================================================== --><div class="popup popup_massagename-message">	<div class="popup__content">		<div class="popup__body">			<div class="popup__close" aria-label="Закрыть модальное окно"></div>		</div>	</div></div><!-- =============================================================================================================================== --><div class="popup popup_video">	<div class="popup__content">		<div class="popup__body">			<div class="popup__close popup__close_video" aria-label="Закрыть модальное окно"></div>			<div class="popup__video _video"></div>		</div>	</div></div><!-- <a href="#video" data-video="stFOy0Noahg" class=" _popup-link">Открыть видео</a> --><!-- =============================================================================================================================== --><!-- Popup-CSS --><!-- <div id="popup-2" class="popup-2">	<a href="#" class="popup__area-2"></a>	<div class="popup__body-2">		<div class="popup__content-2">			<a href="#" class="popup__close-2">Close</a>			<div class="popup__title">Заказать ворота Дешево!</div>			<div class="popup__text">				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний				Алютех и REHAU и Авелор			</div>			<div class="popup__text">				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний				Алютех и REHAU и Авелор			</div>			<div class="popup__text">				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний				Алютех и REHAU и Авелор			</div>			<div class="popup__text">				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний				Алютех и REHAU и Авелор			</div>			<div class="popup__text">				Автоматики для ворот, роллет и фасадных конструкций. Официальный представитель компаний				Алютех и REHAU и Авелор			</div>		</div>	</div></div> --><!-- <a href="#popup-2" class="heading-info__button popup-link"></a> -->	<!-- Swiper --><!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> --><!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script> --><script src="js/vendors.min.js?_v=20221205120425"></script><script src="js/app.min.js?_v=20221205120425"></script></body></html>
