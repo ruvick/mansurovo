@@ -87,10 +87,10 @@ let sliderBg = new Swiper('.slider-bg', {
 	//	clickable: true,
 	//},
 	// Arrows
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
+	// navigation: {
+	// 	nextEl: '.swiper-button-next',
+	// 	prevEl: '.swiper-button-prev',
+	// },
 	/*
 	breakpoints: {
 		320: {
@@ -212,10 +212,10 @@ let directSlImg = new Swiper('.directSlImg', {
 	//	clickable: true,
 	//},
 	// Arrows
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
+	// navigation: {
+	// 	nextEl: '.swiper-button-next',
+	// 	prevEl: '.swiper-button-prev',
+	// },
 	/*
 	breakpoints: {
 		320: {
